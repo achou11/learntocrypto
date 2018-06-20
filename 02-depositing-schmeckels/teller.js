@@ -17,7 +17,10 @@ if (process.argv[2]) {
             console.error('Invalid command-line arguments!')
             break
     }
+} else {
+    console.error('Please provide a transaction (balance or deposit) as the first argument')
 }
+
 
 client.on('data', function (msg) {
     console.log(msg)
